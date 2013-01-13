@@ -13,8 +13,11 @@ SideNavigationPanel uses a Builder to add MenuItems to it:
         .addMenuItem("Another Page", AnotherPage.class)));
 
 the markup is
+
     <div wicket:id="navigation"></div>
+
 or
+
     <wicket:container wicket:id="navigation"/>
 
 The html coming from this is a div containing an unordered list with the right bootstrap classes added:
