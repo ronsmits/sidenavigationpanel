@@ -6,6 +6,7 @@ I wanted a simple way of adding a sidebar menu to a wicket application where I u
 Using
 =====
 SideNavigationPanel uses a Builder to add MenuItems to it:
+
     add(new SideNavigationPanel(new SideNavigationPanel.Builder("navigation", getPage()).
         .addMenuItem("List", ListPage.class)
         .addMenuItem("Add", AddPage.class)
@@ -17,6 +18,7 @@ or
     <wicket:container wicket:id="navigation"/>
 
 The html coming from this is a div containing an unordered list with the right bootstrap classes added:
+
     <div>
         <ul class="nav nav-list">
             <li><a href="./index.html">Home</a></li>
