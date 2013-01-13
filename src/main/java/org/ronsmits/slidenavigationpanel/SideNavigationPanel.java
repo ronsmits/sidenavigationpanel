@@ -62,5 +62,9 @@ public class SideNavigationPanel extends Panel {
             links.add(link);
             return this;
         }
+
+        public SideNavigationPanel build() {
+            return new SideNavigationPanel(this);
+        }
     }
 }
