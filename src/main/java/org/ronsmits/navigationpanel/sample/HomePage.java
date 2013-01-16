@@ -1,10 +1,9 @@
-package org.ronsmits.slidenavigationpanel.sample;
+package org.ronsmits.navigationpanel.sample;
 
 import org.apache.wicket.markup.html.basic.Label;
 import org.apache.wicket.request.mapper.parameter.PageParameters;
 
-public class HomePage extends AbstractPage {
-
+public class HomePage extends Template {
     private static final long serialVersionUID = 1L;
 
     public HomePage(final PageParameters parameters) {

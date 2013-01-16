@@ -1,4 +1,4 @@
-package org.ronsmits.slidenavigationpanel.sample;
+package org.ronsmits.navigationpanel.sample;
 
 import org.apache.wicket.markup.html.WebPage;
 import org.apache.wicket.protocol.http.WebApplication;
