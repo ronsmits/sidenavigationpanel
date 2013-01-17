@@ -25,12 +25,17 @@ import org.apache.wicket.markup.repeater.RepeatingView;
 import org.apache.wicket.model.Model;
 
 /**
- * 
+ * The baseclass for both navigation forms. The base functionality of creating a list with the menuitems in it.
+ *  
  * @author Ron
  */
 public abstract class NavigationPanel extends Panel {
 	private static final long serialVersionUID = -5568250122412968503L;
 
+	/**
+	 * Create the navigation list.
+	 * @param builder the initialized builder
+	 */
 	public NavigationPanel(Builder builder) {
 
 		super(builder.id);
@@ -51,6 +56,11 @@ public abstract class NavigationPanel extends Panel {
 		private Page activePage;
 		private List<BookmarkablePageLink<?>> links = new LinkedList<BookmarkablePageLink<?>>();
 
+		/**
+		 * Create the builder that will do the actual work.
+		 * @param id the wicket id that will be used to add it to the page
+		 * @param activePage the current page. This is used to determine where to put the active class.
+		 */
 		public Builder(String id, Page activePage) {
 			this.id = id;
 			this.activePage = activePage;
