@@ -34,7 +34,6 @@ public class SideNavigationPanel extends Panel {
 	public SideNavigationPanel(Builder builder) {
 
         super(builder.id);
-    	System.out.println("builder.id "+ builder.id);
         RepeatingView rv = new RepeatingView("menuItems");
 
         for (BookmarkablePageLink<?> link : builder.links) {
