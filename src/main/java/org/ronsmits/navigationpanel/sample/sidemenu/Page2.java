@@ -13,11 +13,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.ronsmits.slidenavigationpanel.sample;
+package org.ronsmits.navigationpanel.sample.sidemenu;
 
 /**
  *
  * @author Ron
  */
-public class Page1 extends AbstractPage {
+public class Page2 extends AbstractPage {
+	private static final long serialVersionUID = 9179844224758594692L;
 }

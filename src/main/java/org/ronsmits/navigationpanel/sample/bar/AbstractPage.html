@@ -1,0 +1,58 @@
+<!--
+Copyright 2013 Ron.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<body>
+	<wicket:extend>
+		<div class="container-fluid">
+			<div class="navbar navbar-inverse">
+				<div class="navbar-inner" wicket:id="navigation"></div>
+			</div>
+		</div>
+		<div class="container-fluid">
+			<div class="hero-unit">
+				<div class="row-fluid">
+					<wicket:child />
+				</div>
+</div>				
+				<div class="row-fluid">
+				<div class="span6">
+				<h3>The java code</h3>
+					<pre>
+Builder builder = new Builder("navigation", getPage());
+builder.addMenuItem("page 1", Page1.class);
+builder.addMenuItem("Page 2", Page2.class);
+add(new BarNavigationPanel("Test", HomePage.class, builder));
+					</pre>
+					</div>
+					<div class="span6">
+					<h3>The html</h3>
+					<pre>
+&lt;div class="navbar navbar-inverse"&gt;
+  &lt;div class="navbar-inner" wicket:id="navigation"&gt;&lt;/div&gt;
+&lt;/div&gt;					
+					</pre>
+
+					</div>
+				</div>
+		</div>
+	</wicket:extend>
+</body>
+</html>

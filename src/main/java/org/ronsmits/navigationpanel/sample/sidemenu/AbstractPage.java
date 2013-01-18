@@ -13,17 +13,19 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.ronsmits.slidenavigationpanel.sample;
+package org.ronsmits.navigationpanel.sample.sidemenu;
 
-import org.apache.wicket.markup.html.WebPage;
 import org.apache.wicket.request.mapper.parameter.PageParameters;
-import org.ronsmits.slidenavigationpanel.SideNavigationPanel;
+import org.ronsmits.navigationpanel.NavigationPanel;
+import org.ronsmits.navigationpanel.SideNavigationPanel;
+import org.ronsmits.navigationpanel.sample.HomePage;
+import org.ronsmits.navigationpanel.sample.Template;
 
 /**
  *
  * @author Ron
  */
-public abstract class AbstractPage extends WebPage {
+public abstract class AbstractPage extends Template {
 	private static final long serialVersionUID = 4685823834238906112L;
 
 	public AbstractPage() {
@@ -39,9 +41,10 @@ public abstract class AbstractPage extends WebPage {
 
     private void setupMenu() {
         setOutputMarkupId(false);
-        add(new SideNavigationPanel(new SideNavigationPanel.Builder("navigation", getPage())
+        add(new SideNavigationPanel(new NavigationPanel.Builder("navigation", getPage())
                 .addMenuItem("pagina 1", Page1.class)
                 .addMenuItem("pagina 2", Page2.class)
-                .addMenuItem("pagina 3", Page3.class)));
+                .addMenuItem("pagina 3", Page3.class)
+                .addMenuItem("Home", HomePage.class)));
     }
 }

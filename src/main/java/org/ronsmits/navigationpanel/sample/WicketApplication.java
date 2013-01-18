@@ -1,4 +1,4 @@
-package org.ronsmits.slidenavigationpanel.sample;
+package org.ronsmits.navigationpanel.sample;
 
 import org.apache.wicket.markup.html.WebPage;
 import org.apache.wicket.protocol.http.WebApplication;
@@ -26,6 +26,7 @@ public class WicketApplication extends WebApplication {
     public void init() {
         super.init();
         getMarkupSettings().setStripWicketTags(true);
-        // add your configuration here
+        mountPackage("/sidebar", org.ronsmits.navigationpanel.sample.sidemenu.Page1.class);
+        mountPackage("/navbar", org.ronsmits.navigationpanel.sample.bar.Page1.class);
     }
 }

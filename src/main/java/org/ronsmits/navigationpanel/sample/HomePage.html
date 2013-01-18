@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+<meta charset="utf-8" />
+<title>Apache Wicket Quickstart</title>
+</head>
+<body>
+	<wicket:extend>
+		<p>
+			<wicket:link>
+				<ul>
+					<li><a href="sidemenu/Page1.html">Go to pages with a
+							sidebar menu</a></li>
+					<li><a href="bar/Page1.html">Go to pages with a topbar
+							panel</a></li>
+				</ul>
+			</wicket:link>
+		</p>
+		<p>
+			Please mention the correct Wicket version:
+			<wicket:container wicket:id="version">1.5-SNAPSHOT</wicket:container>
+			.
+		</p>
+	</wicket:extend>
+</body>
+</html>
