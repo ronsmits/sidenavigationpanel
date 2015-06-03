@@ -15,12 +15,12 @@
 	<groupId>org.ronsmits</groupId>
 	<artifactId>wicket-bootstrap-sidenavigation</artifactId>
 	<packaging>jar</packaging>
-	<version>0.2.0-SNAPSHOT</version>
+	<version>3.0.0-SNAPSHOT</version>
 
 	<name>sidenavigation</name>
 	<description>A simple component for Wicket to add a bootstrap sidemenu</description>
 	<scm>
-		<developerConnection>scm:git:git@github.com:ronsmits/mvn-repo.git</developerConnection>
+		<developerConnection>scm:git:git@github.com:ronsmits/sidenavigation.git</developerConnection>
 	  <tag>HEAD</tag>
   </scm>
 	<distributionManagement>
