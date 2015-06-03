@@ -26,11 +26,11 @@
 	<distributionManagement>
 		<snapshotRepository>
 			<id>githubsnapshot</id>
-			<url>https://raw.github.com/ronsmits/mvn-repo/master/snapshots</url>
+			<url>file:../mvn-repo/snapshots</url>
 		</snapshotRepository>
 		<repository>
 			<id>githubrepo</id>
-			<url>https://raw.github.com/ronsmits/mvn-repo/master/releases</url>
+			<url>file:../mvn-repo/releases</url>
 		</repository>
 	</distributionManagement>
 
