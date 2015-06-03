@@ -5,7 +5,7 @@ import org.apache.wicket.markup.html.link.BookmarkablePageLink;
 import org.apache.wicket.model.Model;
 /**
  * The topbar implementation of the {@link NavigationPanel}. The div that links to this has to be placed within a 
- * <code>&lt;div class="navbar"&gt&lt;div&gt;</code> This way if you need to place extra stuff like a search panel for
+ * <code>&lt;div class="navbar"&gt;&lt;div&gt;</code> This way if you need to place extra stuff like a search panel for
  * example, you can do it within this div.
  * 
  * @author Ron
