@@ -1,10 +1,37 @@
-Wicket bootstrap sidebar Navigation
-===================================
+# Wicket bootstrap sidebar Navigation
 
 I wanted a simple way of adding a sidebar menu to a wicket application where I use Bootstrap css.
 
-Using
-=====
+## Including in your project
+As this is not released into maven central there are two ways to use this in your project
+
+### compile 
+Clone this repository and run the command:
+````
+mvn clean install
+````
+This will install the jar and the pom in your local repository.
+
+### Use jitpack
+Add the jitpack repo to your pom file:
+```xml
+<repositories>
+  <repository>
+    <id>jitpack.io</id>
+    <url>https://jitpack.io</url>
+  </repository>
+</repositories>
+```
+Add the dependency:
+```xml
+<dependency>
+  <groupId>com.github.ronsmits</groupId>
+  <artifactId>sidenavigationpanel</artifactId>
+  <version>release~3.0.0-SNAPSHOT</version>
+</dependency>
+```
+
+## Using
 SideNavigationPanel uses a Builder to add MenuItems to it:
 
     add(new SideNavigationPanel(new SideNavigationPanel.Builder("navigation", getPage()).
